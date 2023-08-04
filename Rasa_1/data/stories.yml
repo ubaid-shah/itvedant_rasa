@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: course enquiry
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inquiry
+  - action: utter_contact
+
+- story: course offered
+  steps: 
+  - intent: my_intent_ask
+  - action: utter_course_name
+  - action: utter_question
+  - intent: course_deny
+  - action: utter_contact
+
+- story: data science
+  steps:
+  - intent: inquiry
+  - action: utter_data_science_question
+  - intent: data_science
+  - action: utter_data_science
+
+- story: data science deny
+  steps:
+  - intent: inquiry
+  - action: utter_data_science_question
+  - intent: data_science_deny
+  - action: utter_contact

@@ -1,0 +1,24 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Beginning of conversation
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- rule: Fees Enquiry
+  steps:
+  - intent: fees_enquiry_intent
+  - action: fees_enquiry
+  

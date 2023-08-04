@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <style>
+            .hero-image {
+                        background-image: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url("https://www.itvedant.com/images/location/thane1.webp");
+                        height: 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        }
+
+            .hero-text {
+                        text-align: center;
+                        position: absolute;
+                        top: 20%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: white;
+                        }
+        </style>
+    </head>
+    <body>
+        <script>!(function () {
+            let e = document.createElement("script"),
+              t = document.head || document.getElementsByTagName("head")[0];
+            (e.src ="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+              // Replace 1.x.x with the version that you want
+              (e.async = !0),
+              (e.onload = () => {
+                window.WebChat.default(
+                  {
+                    initPayload: "/greet",
+                    customData: { language: "en" },
+                    socketUrl: "http://localhost:5005",
+                    title: "Customer Support"
+                    // add other props here
+                  },
+                  null
+                );
+              }),
+              t.insertBefore(e, t.firstChild);
+          })();
+          localStorage.clear();
+          </script>
+    
+        <div class="hero-image">
+        <button class="openbtn" onclick="openNav()">☰ </button>
+            <div class="hero-text">
+            <h1 style="font-size:50px">ITVEDANT</h1>
+            <button>Decode Your Dreams</button>
+            </div>
+        </div>      
+
+    </body>
+</html>

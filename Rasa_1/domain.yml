@@ -1,0 +1,56 @@
+version: '3.1'
+
+intents:
+- affirm
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- my_intent_ask
+- data_science
+- inquiry
+- course_deny
+- data_science_deny
+- fees_enquiry_intent
+
+
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Good Bye, Take Care, Have a nice day!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_course_question:
+  - text: "How may I help you"
+  utter_course_name:
+  - text: "We offer Data Science, Full Stack Development, Data Analystics and Java Developer Course."
+  utter_question:
+  - text: "Which course do you wnat to join?"
+  utter_data_science_question:
+  - text: "Are you good in maths and statistics?"
+  utter_data_science:
+  -  text: "Join our Data Science Program."
+  utter_contact:
+  - text: "Contact our executive for further enquiry on www.itvedant.com/contacts or call on +91-9874563210"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_happy
+- utter_greet
+- fees_enquiry
+
+entities:
+- course_name

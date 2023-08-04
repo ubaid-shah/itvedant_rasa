@@ -1,0 +1,137 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I am good
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: my_intent_ask
+  examples: |
+    - What is the name of the course you offered?
+    - Which course you offer?
+    - What kind of courses do you have?
+
+- intent: data_science
+  examples: |
+   - If I am good in maths can I join Data Science Course?
+   - I am good in maths
+   - I am good in Stats
+   - My friend told me to join data science course
+   - Yes, I am good in it.
+
+- intent: inquiry
+  examples: |
+    - I want to enquire about the course.
+    - I want to know more about the course details
+
+- intent: course_deny
+  examples: |
+    - I don't know
+    - I am not sure
+    - I want join different course
+    - I will think about it
+
+- intent: data_science_deny
+  examples: |
+    - I am not good in it.
+    - I am afraid of maths.
+    - No maths please.
+    - Maths is very hard.
+
+- intent: fees_enquiry_intent
+  examples: |
+    - What is the fees of [Data Science Course](course_name)?
+    - What is the fees of [Full Stack Development Course](course_name)?
+    - What is the fees of [Java Developer Course](course_name)?
+
+- lookup: course_name
+  examples: |
+    - Data Science Course
+    - Full Stack Development Course
+    - Java Developer Course
+    - Data Analytics Course
+    - data science
+    - data analytics
+    - full stack developement
+
