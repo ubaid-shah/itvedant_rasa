@@ -1,0 +1,134 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: enquiry
+  examples: |
+    - I want to enquire about the courses you offer.
+    - What kind of courses do you offer?
+    - What courses are available?
+    - courses offered?
+    - How many courses do you have?
+
+- intent: online
+  examples: |
+    - Which online courses do you have?
+    - Is there any online courses you have?
+    - online courses????
+    - Which courses are avalable onile?
+    - any online course available?
+
+- intent: data_sciecne
+  examples: |
+    - I want to join data science course.
+    - I want to to enroll data science course.
+    - data science
+
+- intent: offline
+  examples: |
+    - Which offline courses do you have?
+    - Is there any offline courses you have?
+    - offline courses????
+    - Which courses are avalable offline?
+    - any offline course available? 
+
+- intent: fixed_fees
+  examples: |
+    - What is the fees of [the python developer](course_name) course?
+    - What is the fees of [the SQL developer](course_name) course?
+    - What is the fees of [the Full Stack developer](course_name) course?
+
+- lookup: course_name
+  examples: |
+    - the python developer
+    - the SQL developer
+    - the Full Stack developer
+
